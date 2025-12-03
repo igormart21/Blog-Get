@@ -26,7 +26,7 @@ const Footer = () => {
     ];
 
     return (
-        <footer className="bg-white text-neutral-trueDark">
+        <footer className="bg-[#0B2E54] text-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     {/* Company Info */}
@@ -45,11 +45,11 @@ const Footer = () => {
                                 <h3 className="text-xl font-poppins font-bold">
                                     G-Tec Desentupidora
                                 </h3>
-                                <p className="text-sm text-primary-gray">Porto Alegre</p>
+                                <p className="text-sm text-gray-300">Porto Alegre</p>
                             </div>
                         </Link>
 
-                        <p className="text-primary-gray mb-6 leading-relaxed">
+                        <p className="text-gray-300 mb-6 leading-relaxed">
                             Especialistas em desentupimento em Porto Alegre e região.
                             Atendimento 24 horas com equipamentos modernos e técnicos qualificados.
                         </p>
@@ -84,7 +84,7 @@ const Footer = () => {
                                 <li key={service.href}>
                                     <Link
                                         href={service.href}
-                                        className="text-primary-soft hover:text-primary-blue transition-colors duration-200 text-sm"
+                                        className="text-gray-300 hover:text-primary-green transition-colors duration-200 text-sm"
                                     >
                                         {service.label}
                                     </Link>
@@ -103,7 +103,7 @@ const Footer = () => {
                                 <li key={page.href}>
                                     <Link
                                         href={page.href}
-                                        className="text-primary-soft hover:text-primary-blue transition-colors duration-200 text-sm"
+                                        className="text-gray-300 hover:text-primary-green transition-colors duration-200 text-sm"
                                     >
                                         {page.label}
                                     </Link>
@@ -121,25 +121,25 @@ const Footer = () => {
                             <div className="flex items-start space-x-3">
                                 <Phone className="w-5 h-5 text-primary-green mt-1 flex-shrink-0" />
                                 <div>
-                                    <p className="text-primary-gray text-sm">
+                                    <p className="text-gray-300 text-sm">
                                         <a
                                             href={`tel:+${siteConfig.phone.replace(/\D/g, '')}`}
-                                            className="hover:text-primary-blue transition-colors duration-200"
+                                            className="hover:text-primary-green transition-colors duration-200"
                                         >
                                             {siteConfig.phone}
                                         </a>
                                     </p>
-                                    <p className="text-xs text-primary-gray/80">Atendimento 24h</p>
+                                    <p className="text-xs text-gray-400">Atendimento 24h</p>
                                 </div>
                             </div>
 
                             <div className="flex items-start space-x-3">
                                 <Mail className="w-5 h-5 text-primary-green mt-1 flex-shrink-0" />
                                 <div>
-                                    <p className="text-primary-gray text-sm">
+                                    <p className="text-gray-300 text-sm">
                                         <a
                                             href={`mailto:${siteConfig.email}`}
-                                            className="hover:text-primary-blue transition-colors duration-200"
+                                            className="hover:text-primary-green transition-colors duration-200"
                                         >
                                             {siteConfig.email}
                                         </a>
@@ -150,20 +150,20 @@ const Footer = () => {
                             <div className="flex items-start space-x-3">
                                 <MapPin className="w-5 h-5 text-primary-green mt-1 flex-shrink-0" />
                                 <div>
-                                    <p className="text-primary-gray text-sm">
+                                    <p className="text-gray-300 text-sm">
                                         {siteConfig.location}
                                     </p>
-                                    <p className="text-xs text-primary-gray/80">{siteConfig.state}, {siteConfig.country}</p>
+                                    <p className="text-xs text-gray-400">{siteConfig.state}, {siteConfig.country}</p>
                                 </div>
                             </div>
 
                             <div className="flex items-start space-x-3">
                                 <Clock className="w-5 h-5 text-primary-green mt-1 flex-shrink-0" />
                                 <div>
-                                    <p className="text-primary-gray text-sm">
+                                    <p className="text-gray-300 text-sm">
                                         24 horas por dia
                                     </p>
-                                    <p className="text-xs text-primary-gray/80">7 dias por semana</p>
+                                    <p className="text-xs text-gray-400">7 dias por semana</p>
                                 </div>
                             </div>
                         </div>
@@ -181,22 +181,22 @@ const Footer = () => {
                 </div>
 
                 {/* Bottom Bar */}
-                <div className="border-t border-gray-200 mt-12 pt-8">
+                <div className="border-t border-white/10 mt-12 pt-8">
                     <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-                        <p className="text-primary-gray text-sm">
+                        <p className="text-gray-400 text-sm">
                             © {currentYear} G-Tec Desentupidora. Todos os direitos reservados.
                         </p>
 
                         <div className="flex space-x-6 text-sm">
                             <Link
                                 href="/politica-privacidade"
-                                className="text-primary-gray hover:text-primary-blue transition-colors duration-200"
+                                className="text-gray-400 hover:text-primary-green transition-colors duration-200"
                             >
                                 Política de Privacidade
                             </Link>
                             <Link
                                 href="/termos-uso"
-                                className="text-primary-gray hover:text-primary-blue transition-colors duration-200"
+                                className="text-gray-400 hover:text-primary-green transition-colors duration-200"
                             >
                                 Termos de Uso
                             </Link>
