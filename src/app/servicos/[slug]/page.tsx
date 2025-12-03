@@ -135,7 +135,7 @@ export default async function ServicePage({ params }: PageProps) {
                                 href={`https://wa.me/${siteConfig.whatsapp}`}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="inline-flex items-center px-8 py-4 bg-white text-primary-dark font-bold rounded-lg hover:bg-neutral-light transition-colors shadow-lg hover:scale-105 transform duration-200"
+                                className="inline-flex items-center px-8 py-4 bg-primary-green text-white font-bold rounded-lg hover:bg-primary-green/90 transition-colors shadow-lg hover:scale-105 transform duration-200"
                             >
                                 Chamar Técnico Agora
                             </a>
