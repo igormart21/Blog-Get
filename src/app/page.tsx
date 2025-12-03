@@ -67,26 +67,8 @@ export default function Home() {
                                 Atendimento Regional Especializado
                             </h3>
                             <p className="mb-4">
-                                Entendemos as necessidades específicas de cada região. Por isso, mantemos bases operacionais estratégicas para garantir a chegada rápida em até 40 minutos:
+                                Entendemos as necessidades específicas de cada região. Por isso, mantemos bases operacionais estratégicas para garantir a chegada rápida em até 40 minutos.
                             </p>
-                            <ul className="grid md:grid-cols-2 gap-4 mt-4 list-none pl-0">
-                                <li className="flex items-start">
-                                    <CheckCircle2 className="w-5 h-5 text-primary-green mr-2 mt-1 flex-shrink-0" />
-                                    <span><strong><a href="https://canoas.desentupidora24horas.tec.br" target="_blank" rel="noopener noreferrer" className="text-primary-blue hover:underline">Desentupidora em Canoas</a>:</strong> Atendimento expresso para todos os bairros.</span>
-                                </li>
-                                <li className="flex items-start">
-                                    <CheckCircle2 className="w-5 h-5 text-primary-green mr-2 mt-1 flex-shrink-0" />
-                                    <span><strong><a href="https://desentupidora24horas.tec.br" target="_blank" rel="noopener noreferrer" className="text-primary-blue hover:underline">Desentupidora em Porto Alegre</a>:</strong> Cobertura completa na capital gaúcha.</span>
-                                </li>
-                                <li className="flex items-start">
-                                    <CheckCircle2 className="w-5 h-5 text-primary-green mr-2 mt-1 flex-shrink-0" />
-                                    <span><strong><a href="https://cuiaba.desentupidora24horas.tec.br" target="_blank" rel="noopener noreferrer" className="text-primary-blue hover:underline">Desentupidora em Cuiabá</a>:</strong> Soluções para o calor de Cuiabá.</span>
-                                </li>
-                                <li className="flex items-start">
-                                    <CheckCircle2 className="w-5 h-5 text-primary-green mr-2 mt-1 flex-shrink-0" />
-                                    <span><strong><a href="https://campogrande.desentupidora24horas.tec.br" target="_blank" rel="noopener noreferrer" className="text-primary-blue hover:underline">Desentupidora em Campo Grande</a>:</strong> Equipes prontas para atender a Cidade Morena.</span>
-                                </li>
-                            </ul>
 
                             <p className="mt-6">
                                 Seja para um simples desentupimento de pia ou para a limpeza complexa de fossas sépticas, conte com a G-TEC. Solicite seu orçamento gratuito agora mesmo!
