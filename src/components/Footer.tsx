@@ -45,12 +45,11 @@ const Footer = () => {
                                 <h3 className="text-xl font-poppins font-bold">
                                     G-Tec Desentupidora
                                 </h3>
-                                <p className="text-sm text-gray-300">Porto Alegre</p>
                             </div>
                         </Link>
 
                         <p className="text-gray-300 mb-6 leading-relaxed">
-                            Especialistas em desentupimento em Porto Alegre e região.
+                            Especialistas em desentupimento residencial e comercial.
                             Atendimento 24 horas com equipamentos modernos e técnicos qualificados.
                         </p>
 
