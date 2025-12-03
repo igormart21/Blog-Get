@@ -1,103 +1,138 @@
 :root {
-  --primary: #0066cc;
-  --primary-dark: #004c99;
-  --secondary: #00cc99;
-  --accent: #ff9900;
-  --background: #ffffff;
-  --surface: #f5f5f5;
-  --text: #333333;
-  --text-light: #666666;
-  --border: #e0e0e0;
-  --radius: 8px;
-  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+    --primary: #0066cc;
+    --background: #FFFFFF;
+    --foreground: #1A1A1A;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0f172a;
-    --surface: #1e293b;
-    --text: #f1f5f9;
-    --text-light: #94a3b8;
-    --border: #334155;
-  }
-}
+@theme inline {
+    /* Core theming variables */
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    /* Design system - primary */
+    --color-primary: #0D3B66;
+    --color-primary-light: #3D5A80;
+    --color-primary-dark: #0D3B66;
+    --color-primary-blue: #3D5A80;
+    --color-primary-gray: #5C5C5C;
+    --color-primary-gold: #F4D35E;
+    --color-primary-yellow: #F4D35E;
+    --color-primary-green: #1FAB89;
+    --color-primary-soft: #2A4A6B;
+    /* Compatibility alias used in components */
+    --color-primary-red: #D72638;
+
+    /* Accent palette */
+    --color-accent-red: #D72638;
+    --color-accent-gold: #F4D35E;
+    --color-accent-green: #1FAB89;
+
+    /* Neutral palette */
+    --color-neutral-white: #FFFFFF;
+    --color-neutral-light: #F7F7F7;
+    --color-neutral-dark: #2A4A6B;
+    --color-neutral-trueDark: #1A1A1A;
+    --color-neutral-gray: #5C5C5C;
+
+    /* Fonts (keep existing variables for consistency) */
+    --font-sans: var(--font-geist-sans);
+    --font-mono: var(--font-geist-mono);
 }
 
 body {
-  font-family: var(--font-sans);
-  background-color: var(--background);
-  color: var(--text);
-  line-height: 1.6;
+    font-family: var(--font-sans);
+    background-color: var(--background);
+    color: var(--foreground);
+    line-height: 1.6;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  line-height: 1.2;
-  margin-bottom: 1rem;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.2;
+    margin-bottom: 1rem;
 }
 
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
 }
 
 .btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.75rem 1.5rem;
-  border-radius: var(--radius);
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.2s;
-  border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--radius);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: none;
 }
 
 .btn-primary {
-  background-color: var(--primary);
-  color: white;
+    background-color: var(--primary);
+    color: white;
 }
 
 .btn-primary:hover {
-  background-color: var(--primary-dark);
+    background-color: var(--primary-dark);
 }
 
 .btn-secondary {
-  background-color: var(--secondary);
-  color: white;
+    background-color: var(--secondary);
+    color: white;
 }
 
 .btn-outline {
-  border: 2px solid var(--primary);
-  color: var(--primary);
-  background: transparent;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    background: transparent;
 }
 
 .grid {
-  display: grid;
-  gap: 1.5rem;
+    display: grid;
+    gap: 1.5rem;
 }
 
 .section {
-  padding: 4rem 0;
+    padding: 4rem 0;
 }
 
 /* Utility classes */
-.text-center { text-align: center; }
-.mb-4 { margin-bottom: 1rem; }
-.mb-8 { margin-bottom: 2rem; }
-.flex { display: flex; }
-.items-center { align-items: center; }
-.justify-between { justify-content: space-between; }
-.gap-4 { gap: 1rem; }
+.text-center {
+    text-align: center;
+}
+
+.mb-4 {
+    margin-bottom: 1rem;
+}
+
+.mb-8 {
+    margin-bottom: 2rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.gap-4 {
+    gap: 1rem;
+}
