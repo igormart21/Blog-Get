@@ -1,0 +1,99 @@
+.layout {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 3rem;
+}
+
+.content {
+    min-width: 0;
+}
+
+.header {
+    background: var(--surface);
+    padding: 3rem;
+    border-radius: var(--radius);
+    margin-bottom: 3rem;
+}
+
+.title {
+    font-size: 2.5rem;
+    color: var(--primary-dark);
+    margin-bottom: 1rem;
+}
+
+.description {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    margin-bottom: 2rem;
+    max-width: 800px;
+}
+
+.cta {
+    margin-top: 1.5rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.localInfo {
+    margin: 4rem 0;
+    padding: 2rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+}
+
+.neighborhoods {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+    list-style: none;
+}
+
+.neighborhoods li {
+    background: var(--surface);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.faq {
+    margin-bottom: 3rem;
+}
+
+.details {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.details summary {
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--primary-dark);
+}
+
+.details p {
+    margin-top: 1rem;
+    color: var(--text-light);
+}
+
+@media (max-width: 768px) {
+    .layout {
+        grid-template-columns: 1fr;
+    }
+
+    .header {
+        padding: 2rem;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+}
